@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            /* display: grid;
+            place-items: center; */
+            background-color: antiquewhite;
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            background-color: rgb(41, 45, 44);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 4px; 
+        }
+        label{
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        #temp{
+            display: inline-flex;
+            justify-content: center;
+            margin-left: 20%; 
+        }
+        #btn{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin-top: 10px;
+        }
+        #resultContainer{
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <form id="tempCal" onsubmit="calculateTemp(); return false"></form>
+
+        <label for="temp" id="label">Please Enter a Temparature</label><br>
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">Celcius</option>
+            <option value="fah">Fahrenheit</option>
+            <option value="cel">Kelvin</option>
+        </select><br>
+
+        <input type="submit" value="submit" name="temp" id="btn">
+
+        <span id="result"></span>
+    </div> -->
+<div class="container">
+    <form id="tempCalc" onsubmit="calculateTemp();return false">
+        <label for="temp">Please enter the temperature you'd like to convert.</label>
+        <br><input type="number"name="temp"id="temp">
+        <select name="temp_diff"id="temp_diff">
+             <option value="cel">°Celsius</option>
+             <option value="fah">°Fahrenheit</option>
+        </select><br />
+        <input type="submit" name="temp" id="btn"><br>
+        <span id="resultContainer"></span>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
